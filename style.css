@@ -205,7 +205,7 @@ strong {
     color: var(--white);
     text-align: justify;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 footer {
@@ -234,10 +234,22 @@ footer > div {
 #my-projects-list a{
     text-decoration: none;
     color: var(--dark3);
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #my-projects-list a:hover {
     color: var(--dark5);
     text-decoration: underline;
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
 }

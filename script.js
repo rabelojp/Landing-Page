@@ -29,6 +29,32 @@ function showProjects(data) {
         a.appendChild(linkText)
         listElement.appendChild(a)
     }
+    
 }
 
 getProjects()
+
+const backToTopBtn = document.querySelector("#back-to-top");
+
+window.addEventListener("scroll", function() {
+
+    const scrollTop = window.pageYOFFset || document.documentElement.scrollTop
+
+    if(scrollTop > 50) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+
+})
+
+backToTopBtn.addEventListener("click", function(e)  {
+
+    e.preventDefault()
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    })
+
+})
